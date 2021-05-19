@@ -603,7 +603,7 @@ local _, _, _, tocversion = GetBuildInfo();
 T._CatchAllErrors = false;
 T._tocversion = tocversion;
 
-DC.WOWC = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
+DC.WOWC = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) or (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
 DC.WOW8 = (tocversion >= 80000) or DC.WOWC
 
 
